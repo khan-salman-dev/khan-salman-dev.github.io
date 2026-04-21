@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Salman - Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            color: #00ff88;
+            margin-bottom: 1rem;
+        }
+
+        .header h2 {
+            color: #888;
+            font-weight: 300;
+        }
+
+        /* Grid Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            color: #00ff88;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-info div {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #00ff88;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            background: #2d2d2d;
+            margin-bottom: 0.5rem;
+            padding: 0.8rem;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .skill-list li:hover {
+            transform: translateX(5px);
+        }
+
+        /* Main Content Styles */
+        .experience-item,
+        .project-card {
+            background: #1a1a1a;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            border-left: 3px solid #00ff88;
+        }
+
+        .project-card h3 {
+            color: #00ff88;
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-item {
+            background: #2d2d2d;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Muhammad Salman</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-grid">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <section class="contact-info">
+                    <h3 class="section-title">Contact</h3>
+                    <div><i class="fas fa-phone"></i>0349-2660170</div>
+                    <div><i class="fas fa-map-marker-alt"></i>Peshawar, KP Pakistan</div>
+                    <div><i class="fas fa-envelope"></i>salmankhan775543@gmail.com</div>
+                </section>
+
+                <section class="languages">
+                    <h3 class="section-title">Languages</h3>
+                    <ul class="skill-list">
+                        <li>English</li>
+                        <li>Urdu</li>
+                        <li>Pashto</li>
+                    </ul>
+                </section>
+
+                <section class="skills">
+                    <h3 class="section-title">Skills</h3>
+                    <ul class="skill-list">
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>TypeScript</li>
+                        <li>Firebase</li>
+                        <li>PostgreSQL</li>
+                        <li>Redux/Zustand</li>
+                        <li>Tailwind CSS</li>
+                        <li>Material UI</li>
+                    </ul>
+                </section>
+
+                <section class="interests">
+                    <h3 class="section-title">Interests</h3>
+                    <ul class="skill-list">
+                        <li>Reading</li>
+                        <li>Travelling & Exploring</li>
+                        <li>Cricket & Exercise</li>
+                        <li>Learning New Technologies</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="education">
+                    <h3 class="section-title">Education</h3>
+                    <div class="experience-item">
+                        <h4>BS Computer Science</h4>
+                        <p>University of Peshawar</p>
+                        <p>2024 | GPA: 3.82</p>
+                    </div>
+                </section>
+
+                <section class="experience">
+                    <h3 class="section-title">Experience</h3>
+                    <div class="experience-item">
+                        <h4>Full Stack Developer - iPlexSoft</h4>
+                        <p>Jan 2024 - Nov 2024</p>
+                        <p>Developed intuitive user interfaces and enhanced user experience through engaging web
+                            applications.</p>
+                    </div>
+                </section>
+
+                <section class="projects">
+                    <h3 class="section-title">Projects</h3>
+                    <div class="project-card">
+                        <h3>Automatic Question Paper Generator</h3>
+                        <p>System for generating different types of questions with role-based access control.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">React.js</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">Redux Toolkit</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Artabia - Digital Art Marketplace</h3>
+                        <p>Platform for artists to showcase and sell digital artworks with secure transactions.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">Next.js</span>
+                            <span class="tech-item">Firebase</span>
+                            <span class="tech-item">Redux</span>
+                            <span class="tech-item">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Maintenance Management System</h3>
+                        <p>Ticketing system with real-time updates and role-based access control.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">Next.js</span>
+                            <span class="tech-item">Firebase</span>
+                            <span class="tech-item">Material UI</span>
+                            <span class="tech-item">Redux Toolkit</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        window.addEventListener('scroll', function () {
+            const elements = document.querySelectorAll('.experience-item, .project-card');
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                if (position.top < window.innerHeight) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
